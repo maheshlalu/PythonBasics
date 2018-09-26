@@ -1,3 +1,4 @@
+
 k = 98
 if k%2 == 0:
     print(str(k)+' is even number')
@@ -20,7 +21,6 @@ def check_even(k):
         print('its error')
 
 # print(check_even('bhfh'))
-
 def check_even_odd(k):
     if type(k) not in ['int','float']:
         print('its not an integer or float')
