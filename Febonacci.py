@@ -24,6 +24,8 @@ def fabonicci(n):
 k = fabonicci(9)
 print("print k value",k)
 
+#M
+#method 1
 def printname(list):
     posList = []
     negList = []
@@ -37,10 +39,43 @@ def printname(list):
 
 print(printname([1,2,3,4,-1]))
 
-def inverseelement(list):
-    print(list)
 
-inverseelement([1,2,3])
+#method 2
+
+
+def findnegativeandpositivenumber(items):
+    negativeList = list(filter(lambda x: x < 0, items))
+    positiveList = list(filter(lambda x: x > 0, items))
+    return (negativeList,positiveList)
+
+numbersList = [1, 2, 3, 4, 5,-1,-4,-5]
+print("negative number",findnegativeandpositivenumber(numbersList)[0])
+print("positive number",findnegativeandpositivenumber(numbersList)[1])
+
+#inverses
+
+def inverseelement(elements):
+    return elements[::-1]
+
+print("inverse elements",inverseelement(numbersList))
+
+#Sorting
+
+def listsortingassendinganddesending(lst_sort):
+
+    lst_sort.sort()
+    print("The list  sort assending method:", lst_sort)
+
+    lst_sort.sort(reverse=True)
+
+    print("The list  sort desending method:", lst_sort)
+
+print(listsortingassendinganddesending([9, 5, 7, 3, 1]))
+
+
+
+
+
 
 
 
